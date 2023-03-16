@@ -90,15 +90,10 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 
 ### Built With
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+Flask for front end
+Gradio for deploying model API in huggingface
+huggingface and FAST AI for training and importing model
+opencv for isolating the face 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -107,34 +102,10 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Go to the [https://speech-analyzer.onrender.com/](LIVE DEMO) and upload a video. Wait a few minutes and you'll get the result like below
+[INSERT PIC HERE]
 
 ### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/AbrarAdnan/speech-analyzer.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -150,12 +121,12 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 
 <!-- ROADMAP -->
-## Roadmap
+## Future work and limitations
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+1. The eye contact model is not accurate enough as the dataset is not much abundant.
+2. The rest of the analysis parameters were used with pretrained models because the dataset and computational power to make those models is not available.
+3. Grammer analysis can be a good addition.
+4. Since it's hosted on a free platform the output is slow and the video takes frames every few second for eye contact detection to make it faster. This might affect eye contact accuracy.
 
 See the [open issues](https://github.com/AbrarAdnan/speech-analyzer/issues) for a full list of proposed features (and known issues).
 

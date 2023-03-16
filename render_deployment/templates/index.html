@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Processing</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+        }
+        .container {
+            text-align: center;
+        }
+        table {
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Video Processing</h1>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <input type="file" name="video" accept="video/*" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Upload and Process</button>
+        </form>
+        
+        {% if result %}
+        {{ result}}
+        <!-- {{result.face_emotion}} -->
+        {% endif %}
+        <!-- {% if result %}
+            <div class="mt-4">
+                <h3>Results</h3>
+                <p>Gaze Percentage: {{ result.gaze_percentage }}%</p>
+                <h4>Face Emotion</h4>
+                <table class="table table-bordered">
+                    {% for emotion, value in result.face_emotion.items() %}
+                        <tr>
+                            <td>{{ emotion.capitalize() }}</td>
+                            <td>{{ value }}</td>
+                        </tr>
+                    {% endfor %}
+                </table>
+                <h4>Text Emotion</h4>
+                <table class="table table-bordered">
+                    {% for item in result.text_emotion %}
+                        <tr>
+                            <td>{{ item.label.capitalize() }}</td>
+                            <td>{{ item.score }}</td>
+                        </tr>
+                    {% endfor %}
+                </table>
+                <p>Transcription: {{ result.transcription }}</p>
+                <h4>Text Sentiment</h4>
+                <table class="table table-bordered">
+                    {% for item in result.text_sentiment %}
+                        <tr>
+                            <td>{{ item.label.capitalize() }}</td>
+                            <td>{{ item.score }}</td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        {% endif %} -->
+        {% if duration %}
+        <p> Time taken = {{duration}}</p>
+        {% endif %}
+    </div>
+</body>
+</html>

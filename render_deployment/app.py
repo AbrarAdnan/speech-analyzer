@@ -60,6 +60,7 @@ def index():
     if request.method == 'POST':
         video = request.files['video'].read()
         output = getFocus(video)
+        print(output)
         return render_template('index.html', result=output["data"], duration = output["duration"],  show=True)
     else:
         return render_template('index.html', show=False)
@@ -78,8 +79,6 @@ def getFocus(video):
                     ]}
     ).json()
     print("done")
-    print(response["data"])
-    print(response["duration"])
     # print(response.status_code)
     # print(response.content)
     # print(response.json())

@@ -30,23 +30,20 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/AbrarAdnan/repo_name">
+  <a href="https://github.com/AbrarAdnan/speech-analyzer">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Speech Analyzer</h3>
 
   <p align="center">
-    A AI supported app that can analyze your speech videos.
+    An AI supported app that can analyze your speech videos.
     <br />
-    <a href="https://github.com/AbrarAdnan/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/AbrarAdnan/repo_name">View Demo</a>
+    <a href="https://speech-analyzer.onrender.com/">View Demo</a>
     ·
-    <a href="https://github.com/AbrarAdnan/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/AbrarAdnan/speech-analyzer/issues">Report Bug</a>
     ·
-    <a href="https://github.com/AbrarAdnan/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/AbrarAdnan/speech-analyzer/issues">Request Feature</a>
   </p>
 </div>
 
@@ -95,7 +92,7 @@ It'll say
 
 This is useful to practice public speaking and you can judge how your performance is with an AI.
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `AbrarAdnan`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `Speech Analyzer`, `project_description`
+Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `AbrarAdnan`, `speech-analyzer`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `Speech Analyzer`, `project_description`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -135,7 +132,7 @@ This is an example of how to list things you need to use the software and how to
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
    ```sh
-   git clone https://github.com/AbrarAdnan/repo_name.git
+   git clone https://github.com/AbrarAdnan/speech-analyzer.git
    ```
 3. Install NPM packages
    ```sh
@@ -169,7 +166,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] Feature 3
     - [ ] Nested Feature
 
-See the [open issues](https://github.com/AbrarAdnan/repo_name/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/AbrarAdnan/speech-analyzer/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -207,7 +204,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
 
-Project Link: [https://github.com/AbrarAdnan/repo_name](https://github.com/AbrarAdnan/repo_name)
+Project Link: [https://github.com/AbrarAdnan/speech-analyzer](https://github.com/AbrarAdnan/speech-analyzer)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -226,16 +223,16 @@ Project Link: [https://github.com/AbrarAdnan/repo_name](https://github.com/Abrar
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/AbrarAdnan/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/AbrarAdnan/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/AbrarAdnan/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/AbrarAdnan/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/AbrarAdnan/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/AbrarAdnan/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/AbrarAdnan/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/AbrarAdnan/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/AbrarAdnan/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/AbrarAdnan/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/AbrarAdnan/speech-analyzer.svg?style=for-the-badge
+[contributors-url]: https://github.com/AbrarAdnan/speech-analyzer/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/AbrarAdnan/speech-analyzer.svg?style=for-the-badge
+[forks-url]: https://github.com/AbrarAdnan/speech-analyzer/network/members
+[stars-shield]: https://img.shields.io/github/stars/AbrarAdnan/speech-analyzer.svg?style=for-the-badge
+[stars-url]: https://github.com/AbrarAdnan/speech-analyzer/stargazers
+[issues-shield]: https://img.shields.io/github/issues/AbrarAdnan/speech-analyzer.svg?style=for-the-badge
+[issues-url]: https://github.com/AbrarAdnan/speech-analyzer/issues
+[license-shield]: https://img.shields.io/github/license/AbrarAdnan/speech-analyzer.svg?style=for-the-badge
+[license-url]: https://github.com/AbrarAdnan/speech-analyzer/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/screenshot.png

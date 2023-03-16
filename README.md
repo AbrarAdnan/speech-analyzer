@@ -83,8 +83,6 @@ It'll say
 
 This is useful to practice public speaking and you can judge how your performance is with an AI.
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `AbrarAdnan`, `speech-analyzer`, `twitter_handle`, `[linkedin_username](https://www.linkedin.com/in/abrar-faiaz/)`, `email_client`, `email`, `Speech Analyzer`, `project_description`
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -102,8 +100,7 @@ opencv for isolating the face
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Go to the [https://speech-analyzer.onrender.com/](LIVE DEMO) and upload a video. Wait a few minutes and you'll get the result like below
-[INSERT PIC HERE]
+Firstly get a video you want to analyze and make sure it's in mp4 format. If it's not in mp4 format you can convert it [https://cloudconvert.com/mp4-converter](Here). Make sure the video has proper lighting and visiblility without any distractions and noise so that it can be analyzed more accurately.
 
 ### Prerequisites
 
@@ -112,11 +109,16 @@ Go to the [https://speech-analyzer.onrender.com/](LIVE DEMO) and upload a video.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+Go to the [https://speech-analyzer.onrender.com/](LIVE DEMO) and upload a video. Wait a few minutes and you'll get the result like below
+[INSERT PIC HERE]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Building the project
+The codes used for this are given in the notebook folder along with the comments for their use cases.
+Data prep was used to collect data and prepare them for model training.
+Training was used to train the model. We used resnet 18 because it's small in size and fast. Since we had small dataset our model was performing good.
+More complex model needs more datasets else they'd overfit. The model was fine-tuned with 70+ images with 64% accuracy in 5 epochs
 
 
 

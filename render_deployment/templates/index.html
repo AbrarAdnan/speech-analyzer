@@ -7,14 +7,24 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
+            height: 100vh;
+            background-image: url("/static/images/seamless_bg.png");
+            background-repeat: repeat;
+        }
+        .container {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-color: #f8f9fa;
+            height: 100%;
         }
-        .container {
-            text-align: center;
+        .card {
+            width: 40%;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        .card-header {
+            background-color: #007bff;
+            color: #fff;
         }
         table {
             margin: 0 auto;
@@ -23,55 +33,62 @@
 </head>
 <body>
     <div class="container">
-        <h1>Video Processing</h1>
-        <form action="/" method="post" enctype="multipart/form-data">
-            <div class="form-group">
-                <input type="file" name="video" accept="video/*" required>
+        <div class="card">
+            <div class="card-header">Upload Video</div>
+            <div class="card-body">
+                <form action="/" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <input type="file" name="video" accept="video/*" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Upload and Process</button>
+                </form>
             </div>
-            <button type="submit" class="btn btn-primary">Upload and Process</button>
-        </form>
-        
-        {% if result %}
-        {{ result}}
-        <!-- {{result.face_emotion}} -->
-        {% endif %}
-        <!-- {% if result %}
-            <div class="mt-4">
-                <h3>Results</h3>
-                <p>Gaze Percentage: {{ result.gaze_percentage }}%</p>
-                <h4>Face Emotion</h4>
-                <table class="table table-bordered">
-                    {% for emotion, value in result.face_emotion.items() %}
-                        <tr>
-                            <td>{{ emotion.capitalize() }}</td>
-                            <td>{{ value }}</td>
-                        </tr>
+        </div>
+        <div class="card">
+            <div class="card-header">Results</div>
+            <div class="card-body">
+                {% if show %}
+                    {{ result }}
+                {% endif %}
+                {% if output %}
+                    {% for item in output %}
+                        <h6>Item {{ loop.index }}</h6>
+                        <p>Gaze Percentage: {{ item['gaze_percentage'] }}%</p>
+                        <h4>Face Emotion</h4>
+                        <table class="table table-bordered">
+                            {% for emotion, value in item['face_emotion'].items() %}
+                                <tr>
+                                    <td>{{ emotion.capitalize() }}</td>
+                                    <td>{{ value }}</td>
+                                </tr>
+                            {% endfor %}
+                        </table>
+                        <h4>Text Emotion</h4>
+                        <table class="table table-bordered">
+                            {% for emotion in item['text_emotion'] %}
+                                <tr>
+                                    <td>{{ emotion['label'].capitalize() }}</td>
+                                    <td>{{ emotion['score'] }}</td>
+                                </tr>
+                            {% endfor %}
+                        </table>
+                        <p>Transcription: {{ item['transcription'] }}</p>
+                        <h4>Text Sentiment</h4>
+                        <table class="table table-bordered">
+                            {% for sentiment in item['text_sentiment'] %}
+                                <tr>
+                                    <td>{{ sentiment['label'].capitalize() }}</td>
+                                    <td>{{ sentiment['score'] }}</td>
+                                </tr>
+                            {% endfor %}
+                        </table>
                     {% endfor %}
-                </table>
-                <h4>Text Emotion</h4>
-                <table class="table table-bordered">
-                    {% for item in result.text_emotion %}
-                        <tr>
-                            <td>{{ item.label.capitalize() }}</td>
-                            <td>{{ item.score }}</td>
-                        </tr>
-                    {% endfor %}
-                </table>
-                <p>Transcription: {{ result.transcription }}</p>
-                <h4>Text Sentiment</h4>
-                <table class="table table-bordered">
-                    {% for item in result.text_sentiment %}
-                        <tr>
-                            <td>{{ item.label.capitalize() }}</td>
-                            <td>{{ item.score }}</td>
-                        </tr>
-                    {% endfor %}
-                </table>
+                {% endif %}
+                {% if show %}
+                    <p> Time taken = {{duration}}</p>
+                {% endif %}
             </div>
-        {% endif %} -->
-        {% if duration %}
-        <p> Time taken = {{duration}}</p>
-        {% endif %}
+        </div>
     </div>
 </body>
 </html>

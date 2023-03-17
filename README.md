@@ -21,9 +21,6 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/AbrarAdnan/speech-analyzer">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
 <h3 align="center">Speech Analyzer</h3>
 
@@ -160,7 +157,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Abrar Faiaz Adnan - [Linkedin](https://www.linkedin.com/in/abrar-faiaz/)
 
 Project Link: [https://github.com/AbrarAdnan/speech-analyzer](https://github.com/AbrarAdnan/speech-analyzer)
 

@@ -92,11 +92,12 @@ This app is particularly useful for those looking to practice public speaking an
 To use the app, you will need a video of the speech you want to analyze. Make sure it is in mp4 format. If it is not in mp4, you can use any online video converter like [this](https://cloudconvert.com/mp4-converter) to convert it to mp4.
 
     Visit the Speech Analyzer website.
-    Click on "Choose File" and select the video file you want to analyze.
-    Click on "Analyze Speech" and wait for the analysis to complete.
+    Choose the video you want to upload
+    Click on "Submit" and wait for the analysis to complete.
     Once the analysis is complete, you will see the results displayed on the screen.
 
 That's it! It's that easy to use the Speech Analyzer app. Give it a try and see how it can help you improve your public speaking skills.
+NOTE: It takes a bit of time to analyze videos along with uploading the file as a lot of work is done in the backend. Since the servers are in free tier it takes a while to get the resources allocated to the app so you may have to wait a while to get the response.
 
 <!-- USAGE EXAMPLES -->
 ## Usage

@@ -129,6 +129,34 @@ For getting emotions from text transcript we used [emotion-english-distilroberta
 For getting the sentiments from the transcript we used [distilbert-base-uncased-finetuned-sst-2-english](https://huggingface.co/distilbert-base-uncased-finetuned-sst-2-english) model
 More complex model needs more datasets else they'd overfit. The model was fine-tuned with 2000+ images with 76% accuracy in 6 epochs
 
+The codes used are given in the notebooks folder with comments explaining their use cases. The system to build the source code is given below.
+
+1. Download the repository on your pc using the following command. 
+```bash
+git clone https://github.com/AbrarAdnan/speech-analyzer.git
+```
+2. Activate the virtual environment
+On Windows:
+```bash
+virtualenv venv
+venv\Scripts\activate
+```
+On Mac/Linux:
+```bash
+virtualenv --no-site-packages  venv
+source venv/bin/activate
+```
+3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+4. Open jupyter notebook by running the following command in the terminal 
+```bash
+jupyter notebook
+```
+5. Navigate to the codes folder and run the notebooks. Further instructions are given in the comments of each notebook.
+
+
 
 
 <!-- ROADMAP -->

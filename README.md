@@ -22,7 +22,7 @@
 <br />
 <div align="center">
 
-<h3 align="center">Speech Analyzer</h3>
+<h1 align="center">Speech Analyzer</h3>
 
   <p align="center">
     An AI supported app that can analyze your speech videos.
@@ -65,26 +65,28 @@
 
 Do you ever feel nervous or anxious about public speaking? If so, you're certainly not alone. Many people struggle with social anxiety, which can make speaking in front of others a daunting task. But the good news is that with practice, anyone can improve their speaking skills and overcome their fears.
 
-That's where Speech Analyzer comes in. This powerful AI-supported app can analyze your video speeches and provide detailed feedback on various parameters like eye contact, facial expression, emotional tone, and sentiment analysis. By using this app, you can identify areas for improvement and practice delivering more effective and engaging speeches over time. With the help of cutting-edge AI technology, you can take your public speaking skills to the next level and achieve greater success and confidence in all areas of your life.
+That's where Speech Analyzer comes in. As the developer of the application, I have built a powerful AI-supported app that can analyze your video speeches and provide detailed feedback on various parameters like eye contact, facial expression, emotional tone, and sentiment analysis. By using this app, users can identify areas for improvement and practice delivering more effective and engaging speeches over time. With the help of cutting-edge AI technology, users can take their public speaking skills to the next level and achieve greater success and confidence in all areas of life.
 
-You can analyze your speech with different parameters.
-It'll say 
-1. How much you made eye contact with the camera.
-2. What your face expression was
-3. What emotions your words contained
-4. Sentiment of your speech between positive and negative.
+The app allows you to analyze your speech with different parameters. It provides feedback on:
 
-This is useful to practice public speaking and you can judge how your performance is with an AI.
+    How much eye contact you make with the camera
+    Your facial expression
+    The emotions conveyed by your words
+    The overall sentiment of your speech
+
+This app is particularly useful for those looking to practice public speaking and improve their performance with AI-generated feedback.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 ### Built With
-Flask for front end <br>
-Gradio for deploying model API in huggingface <br>
-huggingface and FAST AI for training and importing model <br>
-opencv for isolating the face <br>
+
+    Flask for front end
+    Gradio for deploying model API in Hugging Face
+    Hugging Face and FastAI for model training and importing
+    OpenCV for isolating the face
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,15 +95,31 @@ opencv for isolating the face <br>
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Firstly get a video you want to analyze and make sure it's in mp4 format. If it's not in mp4 format you can convert it [Here](https://cloudconvert.com/mp4-converter). Make sure the video has proper lighting and visiblility without any distractions and noise so that it can be analyzed more accurately.
+To use the app, you will need a video of the speech you want to analyze. Make sure it is in mp4 format. If it is not in mp4, you can use any online video converter like [this](https://cloudconvert.com/mp4-converter) to convert it to mp4.
 
+    Visit the Speech Analyzer website.
+    Click on "Choose File" and select the video file you want to analyze.
+    Click on "Analyze Speech" and wait for the analysis to complete.
+    Once the analysis is complete, you will see the results displayed on the screen.
 
+That's it! It's that easy to use the Speech Analyzer app. Give it a try and see how it can help you improve your public speaking skills.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
 Go to the [Live Demo](https://speech-analyzer.onrender.com/) and upload a video. Wait a few minutes and you'll get the result like below
 ![Speech Analyzer](https://user-images.githubusercontent.com/52294804/225854370-15a9e74b-4f44-4e2a-9d71-bbe28a24b310.png)
+
+Here are some examples of how you can use the Speech Analyzer app:
+
+    Practice speeches for school or work
+    Prepare for a job interview
+    Improve your presentation skills
+    Boost your confidence when speaking in public
+
+Whatever your goals may be, Speech Analyzer can help you achieve them with AI-generated feedback and analysis.
+
+Please note that the current version of the app only supports video files in mp4 format.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -153,7 +171,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

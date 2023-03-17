@@ -54,15 +54,12 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -71,9 +68,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+Do you ever feel nervous or anxious about public speaking? If so, you're certainly not alone. Many people struggle with social anxiety, which can make speaking in front of others a daunting task. But the good news is that with practice, anyone can improve their speaking skills and overcome their fears.
 
-Do you struggle with public speaking? Do you want a personal assistant to help you with improving your speech? This app will analyze your video speech and give you a detailed analysis of how it was.
+That's where Speech Analyzer comes in. This powerful AI-supported app can analyze your video speeches and provide detailed feedback on various parameters like eye contact, facial expression, emotional tone, and sentiment analysis. By using this app, you can identify areas for improvement and practice delivering more effective and engaging speeches over time. With the help of cutting-edge AI technology, you can take your public speaking skills to the next level and achieve greater success and confidence in all areas of your life.
+
 You can analyze your speech with different parameters.
 It'll say 
 1. How much you made eye contact with the camera.
@@ -88,10 +86,10 @@ This is useful to practice public speaking and you can judge how your performanc
 
 
 ### Built With
-Flask for front end
-Gradio for deploying model API in huggingface
-huggingface and FAST AI for training and importing model
-opencv for isolating the face 
+Flask for front end <br>
+Gradio for deploying model API in huggingface <br>
+huggingface and FAST AI for training and importing model <br>
+opencv for isolating the face <br>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -100,7 +98,7 @@ opencv for isolating the face
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Firstly get a video you want to analyze and make sure it's in mp4 format. If it's not in mp4 format you can convert it [https://cloudconvert.com/mp4-converter](Here). Make sure the video has proper lighting and visiblility without any distractions and noise so that it can be analyzed more accurately.
+Firstly get a video you want to analyze and make sure it's in mp4 format. If it's not in mp4 format you can convert it [Here](https://cloudconvert.com/mp4-converter). Make sure the video has proper lighting and visiblility without any distractions and noise so that it can be analyzed more accurately.
 
 ### Prerequisites
 
@@ -109,7 +107,7 @@ Firstly get a video you want to analyze and make sure it's in mp4 format. If it'
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Go to the [https://speech-analyzer.onrender.com/](LIVE DEMO) and upload a video. Wait a few minutes and you'll get the result like below
+Go to the [Live Demo](https://speech-analyzer.onrender.com/) and upload a video. Wait a few minutes and you'll get the result like below
 [INSERT PIC HERE]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

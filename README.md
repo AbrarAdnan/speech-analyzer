@@ -108,8 +108,13 @@ Go to the [Live Demo](https://speech-analyzer.onrender.com/) and upload a video.
 ## Building the project
 The codes used for this are given in the notebook folder along with the comments for their use cases.
 Data prep was used to collect data and prepare them for model training.
-Training was used to train the model. We used resnet 18 because it's small in size and fast. Since we had small dataset our model was performing good.
-More complex model needs more datasets else they'd overfit. The model was fine-tuned with 70+ images with 64% accuracy in 5 epochs
+The data were collecetd from different youtube videos and the [labelled faces in the wild dataset](https://www.kaggle.com/datasets/atulanandjha/lfwpeople).
+Training was used to train the model. We used resnet 18 because it's small in size and fast. Since we had small dataset and only two labels to choose from our model was performing good.
+To get the emotions from the facial expressions we used [deepface](https://github.com/serengil/deepface)
+Tor getting the transcripts we used [whisper-tiny](https://huggingface.co/openai/whisper-tiny) model
+For getting emotions from text transcript we used [emotion-english-distilroberta-base](https://huggingface.co/j-hartmann/emotion-english-distilroberta-base) model from huggingface
+For getting the sentiments from the transcript we used [distilbert-base-uncased-finetuned-sst-2-english](https://huggingface.co/distilbert-base-uncased-finetuned-sst-2-english) model
+More complex model needs more datasets else they'd overfit. The model was fine-tuned with 2000+ images with 76% accuracy in 6 epochs
 
 
 
@@ -177,7 +182,7 @@ Project Link: [https://github.com/AbrarAdnan/speech-analyzer](https://github.com
 [license-shield]: https://img.shields.io/github/license/AbrarAdnan/speech-analyzer.svg?style=for-the-badge
 [license-url]: https://github.com/AbrarAdnan/speech-analyzer/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
+[linkedin-url]: https://www.linkedin.com/in/abrar-faiaz/
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/

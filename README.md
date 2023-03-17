@@ -25,7 +25,7 @@
 <h1 align="center">Speech Analyzer</h3>
 
   <p align="center">
-    An AI supported app that can analyze your speech videos.
+    An AI-supported app that analyzes public speaking videos to provide feedback on various parameters like eye contact, facial expression, emotional tone, and sentiment analysis.
     <br />
     <a href="https://speech-analyzer.onrender.com/">View Demo</a>
     ·
